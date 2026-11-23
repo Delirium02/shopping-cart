@@ -18,31 +18,55 @@ body {
 
 /* Custom CSS */
 
-.title {
+/* Home Styles */
+.home {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding-top: 50px;
-    font-family: 'Petit Formal Script', cursive;
+    background-color: antiquewhite;
+    padding: 50px;
+    gap: 20px;
 }
 
+.home_title {
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 48px;
+    color: #001c22;
+}
+
+.home_btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #001c22;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Navbar Styles */
 .navbar {
     display: flex;
     justify-content: end;
     gap: 20px;
     padding: 20px;
-    background-color: #f8f8f8;
+    background-color: #001c22;
     font-family: "petit formal script", cursive;
 }
 
-.nav-link {
+.navbar_link {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     font-weight: bold;
     font-size: 22px;
 }
 
-.nav-link:hover {
-    color: #007bff;
+.navbar_link:hover {
+    color: #86c0ff;
 }
+
+/* Shop Styles */
+
+
+
+
+/* Cart Styles */

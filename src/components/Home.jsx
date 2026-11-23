@@ -1,7 +1,12 @@
+import { Link } from "react-router";
+
 function Home() {
   return (
-    <div>
-      <h1 className="title">Shopping Cart</h1>
+    <div className="home">
+      <h1 className="home_title">Shopping Cart</h1>
+      <Link to="/shop" className="home_btn">
+        Go to Shop
+      </Link>
     </div>
   )
 }
