@@ -1,26 +1,18 @@
 import { useState, useEffect } from "react";
+import { useOutletContext } from 'react-router';
+
 
 function Shop() {
-	const [products, setProducts] = useState([]);
-
-	useEffect(() => {
-		async function fetchProducts() {
-			fetch("https://fakestoreapi.com/products")
-				.then((response) => response.json())
-				.then((data) => {
-					setProducts(data);
-					console.log(data);
-				});
-		}
-		fetchProducts();
-	}, []);
+	const { products, loading } = useOutletContext();
 
 	return (
 		<div>
-			<h1>Shop</h1>
-			<div>
-				{products.map((item) => (
-					<div key={item.id}>{item.title}</div>
+			<h1 className="shop_title">Shop</h1>
+			<div className="shop_products">
+				{loading === true ? "Loading..." : products.map((item) => (
+					<div key={item.id}>
+						{item.title}
+					</div>
 				))}
 			</div>
 		</div>

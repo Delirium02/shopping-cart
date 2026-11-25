@@ -67,7 +67,19 @@ body {
 
 /* Shop Styles */
 
+.shop_title {
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 48px;
+    color: #001c22;
+    text-align: center;
+    padding: 20px 0;
+}
 
+.shop_products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
 
 
 /* Cart Styles */
