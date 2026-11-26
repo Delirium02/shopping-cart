@@ -36,6 +36,7 @@ function App() {
 				if (!response.ok) throw new Error(response.status);
 				const data = await response.json();
 				setProducts(data);
+				console.log(data);
 			} catch (error) {
 				console.error("Failed to load products:", error);
 			} finally {

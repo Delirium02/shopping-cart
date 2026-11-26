@@ -67,7 +67,7 @@ body {
 
 /* Shop Styles */
 
-.shop_title {
+.shop_title, .cart_title {
     font-family: 'Petit Formal Script', cursive;
     font-size: 48px;
     color: #001c22;
@@ -77,8 +77,62 @@ body {
 
 .shop_products {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(5, minmax(200px, 1fr));
+    margin: 0 20px;
+    padding-bottom: 20px;
     gap: 20px;
+}
+
+.shop_card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(254, 215, 165);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.shop_options {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+.shop_options > div {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.shop_button {
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 0 10px;
+    transition: all 0.2s ease;
+}
+
+.shop_button:hover {
+    background-color: rgb(255, 198, 122);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.shop_button:active {
+    transform: scale(0.9);
+}
+
+.shop_input {
+    width: 20%;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.shop_item-price {
+    background-color: rgb(255, 198, 122);
+    padding: 5px;
+    border-radius: 5px;
 }
 
 
